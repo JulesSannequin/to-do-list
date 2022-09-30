@@ -1,4 +1,5 @@
-import "./App.css";
+import "./styles/App.css";
+import DarkMode from "./components/DarkMode";
 import { useState } from "react";
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
 
   return (
     <div className="App">
+      <DarkMode />
       {tasks.map((task, index) => {
         return (
           <div className="tasks-row" key={index}>
@@ -36,9 +38,12 @@ function App() {
                 handleCheck(index);
               }}
             />
-            <span className={task.isDone ? "task-done" : null}>
-              {task.title}
-            </span>
+            <div className="task-title">
+              <span className={task.isDone ? "task-done" : null}>
+                {task.title}
+              </span>
+            </div>
+
             <button
               onClick={() => {
                 handleDelete(index);

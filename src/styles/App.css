@@ -1,0 +1,100 @@
+body {
+    /* background-color: #303030;
+    color: white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: var(--background-color);
+    color: var(--text-color);
+}
+
+.task-done {
+    text-decoration: line-through;
+}
+
+.App {
+    background-color: #F16B3A;
+    width: 45rem;
+    height: 20rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: scroll;
+}
+
+.tasks-row {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+   height: 1.5rem;
+    width: 18rem;
+   
+}
+
+.tasks-row button {
+  width: 5rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition-duration: .4s;
+  height: 1.2rem;
+ 
+}
+
+.tasks-row button:hover {
+    background-color: red;
+
+}
+
+.task-title {
+    width: 8rem;
+    overflow: scroll;
+}
+
+.validate {
+    margin-top: 2rem;
+    width: 18rem;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+}
+
+.validate button {
+    width: 7rem;
+    background-color: #262626;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition-duration: .4s;
+}
+
+.validate button:hover {
+    box-shadow: 4px 3px 3px #00EA00;
+    color: #00EA00;
+}
+
+:root {
+    --blue: rgb(26, 57, 87);
+    --white: rgb(236, 236, 236)
+
+}
+
+body.light {
+    --background-color: var(--white);
+    --text-color: var(--blue)
+}
+
+body.dark {
+    --background-color: var(--blue);
+    --text-color: var(--white)
+}
+
+
+
+
