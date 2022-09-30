@@ -1,0 +1,52 @@
+body {
+    background-color: #303030;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.task-done {
+    text-decoration: line-through;
+}
+
+.App {
+    background-color: #F16B3A;
+    width: 45rem;
+    height: 20rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: scroll;
+}
+
+.tasks-row {
+    margin-top: 0.8rem;
+}
+
+.validate {
+    margin-top: 0.8rem;
+    width: 18rem;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+}
+
+.validate button {
+    width: 7rem;
+    background-color: #262626;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition-duration: .3s;
+}
+
+.validate button:hover {
+    box-shadow: 4px 3px 3px #00EA00;
+    color: #00EA00;
+}
+

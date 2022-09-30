@@ -28,16 +28,19 @@ function App() {
     <div className="App">
       {tasks.map((task, index) => {
         return (
-          <div key={index}>
+          <div className="tasks-row" key={index}>
             <input
+              checked={task.isDone}
               type="checkbox"
               onChange={() => {
                 handleCheck(index);
               }}
             />
-            <span>{task.title}</span>
+            <span className={task.isDone ? "task-done" : null}>
+              {task.title}
+            </span>
             <button
-              onClick={(index) => {
+              onClick={() => {
                 handleDelete(index);
               }}
             >
@@ -46,7 +49,7 @@ function App() {
           </div>
         );
       })}
-      <form onSubmit={handleSubmit}>
+      <form className="validate" onSubmit={handleSubmit}>
         <input
           value={input}
           type="text"
