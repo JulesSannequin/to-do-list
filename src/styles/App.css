@@ -74,13 +74,14 @@ body {
     transition-duration: .4s;
 }
 
+
 .validate button:hover {
     box-shadow: 4px 3px 3px #00EA00;
     color: #00EA00;
 }
 
 :root {
-    --blue: rgb(26, 57, 87);
+    --blue: rgb(30, 30, 30);
     --white: rgb(236, 236, 236)
 
 }
@@ -94,6 +95,8 @@ body.dark {
     --background-color: var(--blue);
     --text-color: var(--white)
 }
+
+
 
 
 

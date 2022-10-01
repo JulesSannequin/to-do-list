@@ -19,4 +19,24 @@
 #darkMode.clicked {
     filter: none !important;
     background-color: black;
+    
+}
+
+.switch-theme button {
+    width: 7rem;
+    height: 1.5rem;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    background-color: black;
+    color: #03e9F4;
+    margin-bottom: 1rem;
+    transition: 0.4s;
+}
+
+.switch-theme button:hover {
+    background: #03e9F4;
+    color: #050801;
+    box-shadow: 0 0 25px #03e9F4;
+    
 }
